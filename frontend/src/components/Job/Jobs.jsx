@@ -11,7 +11,7 @@ const Jobs = () => {
   useEffect(() => {
     // fetch jobs from backend; if API is unavailable fall back to sample jobs
     axios
-      .get("http://localhost:4000/api/v1/job/getall", { withCredentials: true })
+      .get("https://job-portal-rubanraj.onrender.com/api/v1/job/getall", { withCredentials: true })
       .then((res) => {
         setJobs(res.data);
       })
