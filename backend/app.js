@@ -14,7 +14,7 @@ config();
 
 app.use(
   cors({
-    origin: ["https://job-portal-rubanraj.vercel.app/"],
+    origin: ["https://job-portal-rubanraj.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
